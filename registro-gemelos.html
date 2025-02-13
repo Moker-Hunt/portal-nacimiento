@@ -81,6 +81,11 @@
                 <span class="logo-icon">📋</span>
             </a>
             <nav>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="derechos.html">Derechos</a></li>
@@ -268,17 +273,26 @@
                     </section>
 
                     <!-- Ayuda -->
-                    <section style="margin-bottom: 60px;">
-                        <div class="alert-box">
-                            <div style="display: flex; align-items: center; gap: 15px;">
-                                <div style="font-size: 2em;">💡</div>
-                                <div>
-                                    <h3 style="color: #ff0000; margin-bottom: 5px;">¿Necesitas ayuda?</h3>
-                                    <p>Contamos con personal especializado en el registro de nacimientos múltiples. <a href="contacto.html" style="color: #007bff;">Contáctanos</a> para recibir orientación personalizada.</p>
-                                </div>
+                    <section style="background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); 
+                                      padding: 40px; border-radius: 20px; color: #fff; text-align: center;">
+                            <h2 style="font-size: 2.2em; margin-bottom: 30px;">¿Necesitas más información?</h2>
+                            <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto 30px; line-height: 1.8;">
+                                Consulta nuestras secciones especializadas para obtener información detallada sobre 
+                                el proceso de registro de nacimiento.
+                            </p>
+                            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                                <a href="derechos.html" class="hover-scale" 
+                                   style="background: rgba(255,255,255,0.15); color: white; padding: 15px 40px; 
+                                          border-radius: 30px; text-decoration: none; font-weight: 600;">
+                                    Ver Derechos
+                                </a>
+                                <a href="consejos.html" class="hover-scale" 
+                                   style="background: rgba(255,255,255,0.15); color: white; padding: 15px 40px; 
+                                          border-radius: 30px; text-decoration: none; font-weight: 600;">
+                                    Ver Consejos
+                                </a>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
                 </div>
             </article>
@@ -295,5 +309,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
