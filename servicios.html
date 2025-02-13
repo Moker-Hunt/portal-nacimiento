@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios del Registro Civil - Registro Civil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Oswald:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #007bff20, #00ff8820);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .gradient-text {
+            background: linear-gradient(120deg, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .service-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: linear-gradient(120deg, #007bff20, #00ff8820);
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #007bff;
+            margin: 5px;
+        }
+        .time-card {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📋</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="derechos.html">Derechos</a></li>
+                    <li><a href="cambio-nombre.html">Cambio de Nombre</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <article style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <!-- Hero Section -->
+                <div style="position: relative; height: 500px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1200" 
+                         alt="Oficina del registro civil" 
+                         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+                                background: linear-gradient(45deg, rgba(0,123,255,0.8), rgba(0,86,179,0.8));">
+                    </div>
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                        <h1 style="font-size: 3.5em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                            Servicios del Registro Civil
+                        </h1>
+                        <p style="font-size: 1.2em; max-width: 600px; margin: 0 auto;">
+                            Ofrecemos una amplia gama de servicios para todos los acontecimientos importantes de tu vida
+                        </p>
+                    </div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+                                background: linear-gradient(transparent, white);"></div>
+                </div>
+
+                <div style="padding: 40px;">
+                    <!-- Servicios Principales Grid -->
+                    <section style="margin-bottom: 60px;">
+                        <h2 class="gradient-text" style="font-size: 2.2em; text-align: center; margin-bottom: 40px;">
+                            Servicios Principales
+                        </h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <!-- Registro de Nacimiento -->
+                            <div class="service-card">
+                                <div class="icon-box">👶</div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 20px;">Registro de Nacimiento</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Inscripción de nacimientos
+                                    </li>
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Expedición de actas
+                                    </li>
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Registro internacional
+                                    </li>
+                                    <li style="display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Registro de adopciones
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Registro de Matrimonio -->
+                            <div class="service-card">
+                                <div class="icon-box">💑</div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 20px;">Registro de Matrimonio</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Celebración de matrimonios
+                                    </li>
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Expedición de actas
+                                    </li>
+                                    <li style="display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Registro internacional
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Registro de Defunción -->
+                            <div class="service-card">
+                                <div class="icon-box">📜</div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 20px;">Registro de Defunción</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Inscripción de defunciones
+                                    </li>
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Expedición de actas
+                                    </li>
+                                    <li style="display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">✓</span>
+                                        Registro internacional
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Servicios Complementarios -->
+                    <section style="margin-bottom: 60px; padding: 40px; border-radius: 20px; 
+                                  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                        <h2 style="font-size: 2.2em; color: #333; margin-bottom: 30px; text-align: center;">
+                            Servicios Complementarios
+                        </h2>
+                        <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                            <span class="service-badge">Copias certificadas</span>
+                            <span class="service-badge">Búsqueda de actas</span>
+                            <span class="service-badge">Rectificación de actas</span>
+                            <span class="service-badge">Anotaciones marginales</span>
+                            <span class="service-badge">Constancias de inexistencia</span>
+                        </div>
+                    </section>
+
+                    <!-- Servicios Especiales -->
+                    <section style="margin-bottom: 60px;">
+                        <h2 class="gradient-text" style="font-size: 2.2em; text-align: center; margin-bottom: 40px;">
+                            Servicios Especiales
+                        </h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                            <!-- Cambios y Modificaciones -->
+                            <div class="service-card">
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 20px;">
+                                    Cambios y Modificaciones
+                                </h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">•</span>
+                                        Cambio de nombre
+                                    </li>
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">•</span>
+                                        Reconocimiento de hijos
+                                    </li>
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">•</span>
+                                        Corrección de datos
+                                    </li>
+                                    <li style="display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">•</span>
+                                        Cambio de género
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Documentos de Identidad -->
+                            <div class="service-card">
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 20px;">
+                                    Documentos de Identidad
+                                </h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">•</span>
+                                        CURP
+                                    </li>
+                                    <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">•</span>
+                                        Certificaciones
+                                    </li>
+                                    <li style="display: flex; align-items: center;">
+                                        <span style="color: #007bff; margin-right: 10px;">•</span>
+                                        Constancias
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Horarios y Tipos de Trámites -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                        <!-- Horarios -->
+                        <section>
+                            <h2 class="gradient-text" style="font-size: 2em; margin-bottom: 30px;">Horarios de Servicio</h2>
+                            <div class="time-card">
+                                <span style="font-size: 2em;">⏰</span>
+                                <div>
+                                    <strong>Lunes a Viernes</strong><br>
+                                    9:00 - 17:00
+                                </div>
+                            </div>
+                            <div class="time-card">
+                                <span style="font-size: 2em;">📅</span>
+                                <div>
+                                    <strong>Sábados</strong><br>
+                                    9:00 - 13:00
+                                </div>
+                            </div>
+                            <div class="time-card">
+                                <span style="font-size: 2em;">💻</span>
+                                <div>
+                                    <strong>Servicios en línea</strong><br>
+                                    24/7
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Tipos de Trámites -->
+                        <section>
+                            <h2 class="gradient-text" style="font-size: 2em; margin-bottom: 30px;">Tipos de Trámites</h2>
+                            <div style="display: grid; gap: 20px;">
+                                <div class="service-card">
+                                    <h3 style="font-size: 1.3em; color: #333; margin-bottom: 15px;">Trámites Presenciales</h3>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                            <span style="color: #007bff; margin-right: 10px;">•</span>
+                                            Registro de actos civiles
+                                        </li>
+                                        <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                            <span style="color: #007bff; margin-right: 10px;">•</span>
+                                            Celebración de matrimonios
+                                        </li>
+                                        <li style="display: flex; align-items: center;">
+                                            <span style="color: #007bff; margin-right: 10px;">•</span>
+                                            Correcciones administrativas
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="service-card">
+                                    <h3 style="font-size: 1.3em; color: #333; margin-bottom: 15px;">Trámites en Línea</h3>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                            <span style="color: #007bff; margin-right: 10px;">•</span>
+                                            Solicitud de copias certificadas
+                                        </li>
+                                        <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                            <span style="color: #007bff; margin-right: 10px;">•</span>
+                                            Consulta de CURP
+                                        </li>
+                                        <li style="display: flex; align-items: center;">
+                                            <span style="color: #007bff; margin-right: 10px;">•</span>
+                                            Agendamiento de citas
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Requisitos Generales -->
+                    <section style="background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+                                  padding: 40px; border-radius: 20px; color: white; text-align: center;">
+                        <h2 style="font-size: 2.2em; margin-bottom: 30px;">Requisitos Generales</h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 10px;">🪪</div>
+                                <p>Identificación oficial vigente</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 10px;">📄</div>
+                                <p>Documentos originales</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 10px;">📅</div>
+                                <p>Documentos actualizados</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 10px;">🏠</div>
+                                <p>Comprobante de domicilio</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="copyright">&copy; 2025. Todos los derechos reservados.</span>
+            <div class="links">
+                <a href="terms.html">Términos de Uso</a>
+                <span>|</span>
+                <a href="privacy.html">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

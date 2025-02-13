@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legislación del Registro Civil - Registro Civil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Oswald:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .timeline-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .timeline-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-box {
+            background: linear-gradient(135deg, #007bff08, #00ff8808);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #007bff;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateX(10px);
+        }
+        .step-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-3px);
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #007bff, #00ff88);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .alert-box {
+            background: linear-gradient(135deg, #ff000010, #ff000005);
+            border-left: 4px solid #ff0000;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .success-box {
+            background: linear-gradient(135deg, #00ff0010, #00ff0005);
+            border-left: 4px solid #00cc00;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📋</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="derechos.html">Derechos</a></li>
+                    <li><a href="cambio-nombre.html">Cambio de Nombre</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <article style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <!-- Hero Section -->
+                <div style="position: relative; height: 500px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200" 
+                         alt="Libros de leyes" 
+                         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+                                background: linear-gradient(45deg, rgba(0,123,255,0.8), rgba(0,86,179,0.8));">
+                    </div>
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                                text-align: center; color: white; width: 90%; max-width: 800px;">
+                        <h1 style="font-size: 3.5em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                            Marco Legal del Registro Civil
+                        </h1>
+                        <p style="font-size: 1.2em; line-height: 1.6;">
+                            Conoce las leyes y regulaciones que rigen el registro civil en México
+                        </p>
+                    </div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+                                background: linear-gradient(transparent, white);"></div>
+                </div>
+
+                <div style="padding: 40px;">
+                    <!-- Base Constitucional -->
+                    <section style="margin-bottom: 60px;">
+                        <h2 style="font-size: 2.2em; text-align: center; margin-bottom: 40px;
+                                 background: linear-gradient(120deg, #007bff, #0056b3);
+                                 -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            Base Constitucional
+                        </h2>
+                        <div class="success-box">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="font-size: 2em;">⚖️</div>
+                                <div>
+                                    <h3 style="color: #00cc00; margin-bottom: 5px;">Artículo 4° Constitucional</h3>
+                                    <p>Garantiza el derecho a la identidad y al registro de nacimiento gratuito</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">👤</div>
+                                <h3>Identidad</h3>
+                                <p>Derecho fundamental</p>
+                            </div>
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">📝</div>
+                                <h3>Nombre</h3>
+                                <p>Derecho al nombre propio</p>
+                            </div>
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">💰</div>
+                                <h3>Gratuidad</h3>
+                                <p>Registro sin costo</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Leyes Federales -->
+                    <section style="margin-bottom: 60px;">
+                        <h2 style="font-size: 2.2em; text-align: center; margin-bottom: 40px;
+                                 background: linear-gradient(120deg, #007bff, #0056b3);
+                                 -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            Leyes Federales
+                        </h2>
+                        <div class="timeline-card">
+                            <div class="step-card">
+                                <div class="step-number">1</div>
+                                <div>
+                                    <h3>Código Civil Federal</h3>
+                                    <p>Base legal para actos del registro civil</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-number">2</div>
+                                <div>
+                                    <h3>Ley de Derechos</h3>
+                                    <p>Protección de niñas, niños y adolescentes</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-number">3</div>
+                                <div>
+                                    <h3>Ley de Nacionalidad</h3>
+                                    <p>Regulación de la nacionalidad mexicana</p>
+                                </div>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-number">4</div>
+                                <div>
+                                    <h3>Ley de Población</h3>
+                                    <p>Gestión del registro poblacional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Legislación Estatal -->
+                    <section style="margin-bottom: 60px; padding: 40px; border-radius: 20px;
+                                  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); color: white;">
+                        <h2 style="font-size: 2.2em; margin-bottom: 30px; text-align: center;">
+                            Legislación Estatal
+                        </h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 15px;">📚</div>
+                                <h3>Códigos Civiles</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li>• Regulación de actos civiles</li>
+                                    <li>• Procedimientos de registro</li>
+                                    <li>• Plazos específicos</li>
+                                </ul>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 15px;">📋</div>
+                                <h3>Reglamentos</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li>• Organización administrativa</li>
+                                    <li>• Funciones de oficiales</li>
+                                    <li>• Procedimientos locales</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Convenios Internacionales -->
+                    <section style="margin-bottom: 60px;">
+                        <h2 style="font-size: 2.2em; text-align: center; margin-bottom: 40px;
+                                 background: linear-gradient(120deg, #007bff, #0056b3);
+                                 -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            Convenios Internacionales
+                        </h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">👶</div>
+                                <h3>Derechos del Niño</h3>
+                                <p>Convención internacional</p>
+                            </div>
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">🌎</div>
+                                <h3>Derechos Civiles</h3>
+                                <p>Pacto Internacional</p>
+                            </div>
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">🤝</div>
+                                <h3>Convenios Bilaterales</h3>
+                                <p>Acuerdos entre países</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Derechos Protegidos -->
+                    <section style="margin-bottom: 60px;">
+                        <h2 style="font-size: 2.2em; text-align: center; margin-bottom: 40px;
+                                 background: linear-gradient(120deg, #007bff, #0056b3);
+                                 -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            Derechos Protegidos
+                        </h2>
+                        <div class="success-box">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="font-size: 2em;">✅</div>
+                                <div>
+                                    <h3 style="color: #00cc00; margin-bottom: 5px;">Garantías Fundamentales</h3>
+                                    <p>Derechos esenciales protegidos por la ley</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">🆔</div>
+                                <h3>Identidad</h3>
+                                <p>Derecho a ser reconocido</p>
+                            </div>
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">🏛️</div>
+                                <h3>Nacionalidad</h3>
+                                <p>Pertenencia al país</p>
+                            </div>
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">👨‍👩‍👧‍👦</div>
+                                <h3>Filiación</h3>
+                                <p>Vínculo familiar legal</p>
+                            </div>
+                            <div class="feature-box">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">⚖️</div>
+                                <h3>Personalidad Jurídica</h3>
+                                <p>Reconocimiento legal</p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="copyright">&copy; 2025. Todos los derechos reservados.</span>
+            <div class="links">
+                <a href="terms.html">Términos de Uso</a>
+                <span>|</span>
+                <a href="privacy.html">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

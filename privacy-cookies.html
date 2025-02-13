@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Cookies - Portal Nacimiento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Oswald:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .cookie-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .cookie-card:hover {
+            transform: translateY(-5px);
+        }
+        .cookie-list {
+            list-style: none;
+            padding: 0;
+        }
+        .cookie-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            color: #666;
+            line-height: 1.6;
+        }
+        .cookie-list li::before {
+            content: '🍪';
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+        .cookie-list.check li::before {
+            content: '✓';
+            color: #007bff;
+        }
+        .cookie-list.cross li::before {
+            content: '✕';
+            color: #ff4444;
+        }
+        .gradient-text {
+            background: linear-gradient(120deg, #007bff, #0056b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #007bff08, #00ff8808);
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📋</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="derechos.html">Derechos</a></li>
+                    <li><a href="cambio-nombre.html">Cambio de Nombre</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=1200') no-repeat center center; background-size: cover; height: 60vh; display: flex; align-items: center;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px; text-align: center; color: #fff;">
+            <h1 style="font-size: 3.5em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                Política de Cookies
+            </h1>
+            <p style="font-size: 1.5em; max-width: 800px; margin: 0 auto; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                Conoce cómo utilizamos las cookies para mejorar tu experiencia
+            </p>
+        </div>
+    </section>
+
+    <main style="background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%); padding: 80px 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <!-- ¿Qué son las cookies? -->
+            <article class="cookie-card">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <div style="font-size: 3em; margin-bottom: 20px;">🍪</div>
+                    <h2 class="gradient-text" style="font-size: 2.2em; margin-bottom: 20px;">
+                        ¿Qué son las cookies?
+                    </h2>
+                    <div class="info-box">
+                        <p style="color: #666; line-height: 1.8; font-size: 1.1em; margin: 0;">
+                            Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando 
+                            visita nuestro sitio web. Son ampliamente utilizadas para hacer que los sitios web 
+                            funcionen de manera más eficiente y proporcionar información a los propietarios del sitio.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cookies que utilizamos -->
+            <article class="cookie-card">
+                <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+                    <div style="font-size: 2.5em;">✨</div>
+                    <div>
+                        <h2 class="gradient-text" style="font-size: 2em; margin-bottom: 10px;">
+                            Cookies que utilizamos
+                        </h2>
+                        <p style="color: #666;">Solo utilizamos cookies técnicas esenciales</p>
+                    </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-bottom: 30px;">
+                    <div>
+                        <h3 style="color: #007bff; margin-bottom: 15px;">Cookies Activas</h3>
+                        <ul class="cookie-list check">
+                            <li><strong>Cookie de aceptación:</strong> Almacena su preferencia sobre el aviso de cookies</li>
+                            <li><strong>Cookies técnicas:</strong> Necesarias para el funcionamiento básico del sitio</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #ff4444; margin-bottom: 15px;">No Utilizamos</h3>
+                        <ul class="cookie-list cross">
+                            <li>Cookies de análisis o estadísticas</li>
+                            <li>Cookies publicitarias</li>
+                            <li>Cookies de terceros</li>
+                            <li>Cookies de seguimiento</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Gestión de Cookies -->
+            <article class="cookie-card">
+                <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+                    <div style="font-size: 2.5em;">⚙️</div>
+                    <div>
+                        <h2 class="gradient-text" style="font-size: 2em; margin-bottom: 10px;">
+                            ¿Cómo gestionar las cookies?
+                        </h2>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: linear-gradient(135deg, #007bff08, #00ff8808);
+                                border-radius: 15px; padding: 20px;">
+                        <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">🔧</div>
+                        <h3 style="color: #333; margin-bottom: 10px;">Configuración del Navegador</h3>
+                        <p style="color: #666;">Configure su navegador para rechazar todas las cookies</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #007bff08, #00ff8808);
+                                border-radius: 15px; padding: 20px;">
+                        <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">🗑️</div>
+                        <h3 style="color: #333; margin-bottom: 10px;">Eliminar Cookies</h3>
+                        <p style="color: #666;">Elimine las cookies después de abandonar el sitio</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #007bff08, #00ff8808);
+                                border-radius: 15px; padding: 20px;">
+                        <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">✅</div>
+                        <h3 style="color: #333; margin-bottom: 10px;">Banner de Cookies</h3>
+                        <p style="color: #666;">Use nuestro banner para aceptar o rechazar cookies</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Duración de las Cookies -->
+            <article class="cookie-card">
+                <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+                    <div style="font-size: 2.5em;">⏱️</div>
+                    <div>
+                        <h2 class="gradient-text" style="font-size: 2em; margin-bottom: 10px;">
+                            Duración de las cookies
+                        </h2>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div style="background: linear-gradient(135deg, #007bff08, #00ff8808);
+                                border-radius: 15px; padding: 20px;">
+                        <h3 style="color: #333; margin-bottom: 10px;">Cookie de Aceptación</h3>
+                        <p style="color: #666;">Duración: 1 año</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #007bff08, #00ff8808);
+                                border-radius: 15px; padding: 20px;">
+                        <h3 style="color: #333; margin-bottom: 10px;">Cookies Técnicas</h3>
+                        <p style="color: #666;">Duración: Solo durante la sesión</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Actualizaciones -->
+            <article class="cookie-card" style="text-align: center;">
+                <div style="font-size: 3em; margin-bottom: 20px;">📝</div>
+                <h2 class="gradient-text" style="font-size: 2em; margin-bottom: 20px;">
+                    Actualizaciones de la política
+                </h2>
+                <div class="info-box" style="text-align: left;">
+                    <p style="color: #666; line-height: 1.8; margin: 0;">
+                        Esta política de cookies puede actualizarse en cualquier momento para reflejar cambios 
+                        en nuestro uso de cookies. Los cambios entrarán en vigor inmediatamente después de su 
+                        publicación en el sitio web.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="copyright">&copy; 2025. Todos los derechos reservados.</span>
+            <div class="links">
+                <a href="terms.html">Términos de Uso</a>
+                <span>|</span>
+                <a href="privacy.html">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookieBanner" class="cookie-banner">
+        <p>Utilizamos cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra 
+        <a href="privacy.html">Política de Privacidad</a> y 
+        <a href="terms.html">Términos de Uso</a>.</p>
+        <button class="button" onclick="aceptarCookies()">Aceptar</button>
+        <button class="button" onclick="verMas()">Más información</button>
+    </div>
+
+    <script>
+        function aceptarCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+            localStorage.setItem('cookiesAceptadas', 'true');
+        }
+
+        function verMas() {
+            window.location.href = 'privacy-cookies.html';
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('cookiesAceptadas')) {
+                document.getElementById('cookieBanner').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

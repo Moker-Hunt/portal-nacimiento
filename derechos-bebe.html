@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derechos del Recién Nacido - Registro Civil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Oswald:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .right-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .right-card:hover {
+            transform: translateY(-5px);
+        }
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #007bff20, #00ff8820);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .gradient-border {
+            border: 3px solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                      linear-gradient(45deg, #007bff, #00ff88) border-box;
+            border-radius: 15px;
+        }
+        .law-card {
+            background: linear-gradient(135deg, #007bff08, #00ff8808);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #007bff;
+        }
+        .highlight-box {
+            background: linear-gradient(120deg, #007bff10, #00ff8810);
+            border-radius: 10px;
+            padding: 3px 10px;
+            color: #007bff;
+            display: inline-block;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📋</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="derechos.html">Derechos</a></li>
+                    <li><a href="cambio-nombre.html">Cambio de Nombre</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article-page">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <article style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <!-- Hero Section -->
+                <div style="position: relative; height: 500px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200" 
+                         alt="Bebé recién nacido" 
+                         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+                                background: linear-gradient(45deg, rgba(0,123,255,0.8), rgba(0,86,179,0.8));">
+                    </div>
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                                text-align: center; color: white; width: 90%; max-width: 800px;">
+                        <h1 style="font-size: 3.5em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                            Derechos Fundamentales del Recién Nacido
+                        </h1>
+                        <p style="font-size: 1.2em; line-height: 1.6;">
+                            Protegiendo el futuro de nuestros pequeños desde el primer momento
+                        </p>
+                    </div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+                                background: linear-gradient(transparent, white);"></div>
+                </div>
+
+                <div style="padding: 40px;">
+                    <!-- Derechos Básicos Grid -->
+                    <section style="margin-bottom: 60px;">
+                        <h2 style="font-size: 2.2em; text-align: center; margin-bottom: 40px;
+                                 background: linear-gradient(120deg, #007bff, #0056b3);
+                                 -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            Derechos Básicos
+                        </h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                            <div class="right-card gradient-border">
+                                <div class="icon-circle">❤️</div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 15px;">Derecho a la Vida</h3>
+                                <p style="color: #666; line-height: 1.6;">
+                                    Garantía fundamental de existencia y desarrollo en condiciones dignas
+                                </p>
+                            </div>
+                            <div class="right-card gradient-border">
+                                <div class="icon-circle">🪪</div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 15px;">Derecho a la Identidad</h3>
+                                <p style="color: #666; line-height: 1.6;">
+                                    Reconocimiento legal y social desde el nacimiento
+                                </p>
+                            </div>
+                            <div class="right-card gradient-border">
+                                <div class="icon-circle">🌎</div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 15px;">Derecho a la Nacionalidad</h3>
+                                <p style="color: #666; line-height: 1.6;">
+                                    Pertenencia a un país y protección legal correspondiente
+                                </p>
+                            </div>
+                            <div class="right-card gradient-border">
+                                <div class="icon-circle">🏥</div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 15px;">Derecho a la Salud</h3>
+                                <p style="color: #666; line-height: 1.6;">
+                                    Acceso a atención médica y cuidados necesarios
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Derecho a la Identidad -->
+                    <section style="margin-bottom: 60px; padding: 40px; border-radius: 20px;
+                                  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); color: white;">
+                        <h2 style="font-size: 2.2em; margin-bottom: 30px; text-align: center;">
+                            Derecho a la Identidad
+                        </h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                            <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 15px;">👤</div>
+                                <h3 style="margin-bottom: 10px;">Nombre Propio</h3>
+                                <p>Derecho a tener nombre y apellidos únicos</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 15px;">🏛️</div>
+                                <h3 style="margin-bottom: 10px;">Nacionalidad</h3>
+                                <p>Reconocimiento oficial del país</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 15px;">👨‍👩‍👦</div>
+                                <h3 style="margin-bottom: 10px;">Filiación</h3>
+                                <p>Vínculo legal con la familia</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px;">
+                                <div style="font-size: 2em; margin-bottom: 15px;">📄</div>
+                                <h3 style="margin-bottom: 10px;">Documentación</h3>
+                                <p>Acceso a documentos oficiales</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Derecho a la Salud y Protección -->
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                        <section class="right-card">
+                            <h2 style="font-size: 2em; color: #333; margin-bottom: 25px;
+                                     border-bottom: 3px solid #007bff; padding-bottom: 15px;">
+                                Derecho a la Salud
+                            </h2>
+                            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                <span class="highlight-box">Atención médica inmediata</span>
+                                <span class="highlight-box">Vacunación oportuna</span>
+                                <span class="highlight-box">Control del desarrollo</span>
+                                <span class="highlight-box">Nutrición adecuada</span>
+                                <span class="highlight-box">Servicios de emergencia</span>
+                            </div>
+                        </section>
+
+                        <section class="right-card">
+                            <h2 style="font-size: 2em; color: #333; margin-bottom: 25px;
+                                     border-bottom: 3px solid #007bff; padding-bottom: 15px;">
+                                Derecho a la Protección
+                            </h2>
+                            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                <span class="highlight-box">Protección contra discriminación</span>
+                                <span class="highlight-box">Seguridad física y emocional</span>
+                                <span class="highlight-box">Ambiente familiar adecuado</span>
+                                <span class="highlight-box">Protección legal</span>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Marco Legal -->
+                    <section style="margin-bottom: 60px;">
+                        <h2 style="font-size: 2.2em; text-align: center; margin-bottom: 40px;
+                                 background: linear-gradient(120deg, #007bff, #0056b3);
+                                 -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            Marco Legal
+                        </h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 20px;">Leyes Nacionales</h3>
+                                <div class="law-card">
+                                    <h4 style="color: #007bff; margin-bottom: 10px;">Constitución Política</h4>
+                                    <p style="color: #666;">Base fundamental de los derechos del niño</p>
+                                </div>
+                                <div class="law-card">
+                                    <h4 style="color: #007bff; margin-bottom: 10px;">Ley General de los Derechos de Niñas, Niños y Adolescentes</h4>
+                                    <p style="color: #666;">Marco específico de protección</p>
+                                </div>
+                                <div class="law-card">
+                                    <h4 style="color: #007bff; margin-bottom: 10px;">Código Civil</h4>
+                                    <p style="color: #666;">Regulación de derechos civiles</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.5em; color: #333; margin-bottom: 20px;">Convenios Internacionales</h3>
+                                <div class="law-card">
+                                    <h4 style="color: #007bff; margin-bottom: 10px;">Convención sobre los Derechos del Niño</h4>
+                                    <p style="color: #666;">Estándares internacionales de protección</p>
+                                </div>
+                                <div class="law-card">
+                                    <h4 style="color: #007bff; margin-bottom: 10px;">Declaración Universal de los Derechos Humanos</h4>
+                                    <p style="color: #666;">Principios fundamentales</p>
+                                </div>
+                                <div class="law-card">
+                                    <h4 style="color: #007bff; margin-bottom: 10px;">Pacto Internacional de Derechos</h4>
+                                    <p style="color: #666;">Garantías civiles y políticas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Importancia del Registro -->
+                    <section style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+                                  padding: 40px; border-radius: 20px; text-align: center;">
+                        <h2 style="font-size: 2.2em; color: #333; margin-bottom: 30px;">
+                            Importancia del Registro
+                        </h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div class="right-card" style="text-align: left;">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">✅</div>
+                                <h3 style="font-size: 1.3em; color: #333; margin-bottom: 10px;">Acceso a Servicios</h3>
+                                <p style="color: #666;">Garantiza el acceso a servicios básicos y derechos fundamentales</p>
+                            </div>
+                            <div class="right-card" style="text-align: left;">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">🔒</div>
+                                <h3 style="font-size: 1.3em; color: #333; margin-bottom: 10px;">Identidad Legal</h3>
+                                <p style="color: #666;">Establece la identidad legal y reconocimiento oficial</p>
+                            </div>
+                            <div class="right-card" style="text-align: left;">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">🛡️</div>
+                                <h3 style="font-size: 1.3em; color: #333; margin-bottom: 10px;">Protección</h3>
+                                <p style="color: #666;">Protege contra el tráfico y otros riesgos</p>
+                            </div>
+                            <div class="right-card" style="text-align: left;">
+                                <div style="font-size: 2em; color: #007bff; margin-bottom: 15px;">📝</div>
+                                <h3 style="font-size: 1.3em; color: #333; margin-bottom: 10px;">Trámites Futuros</h3>
+                                <p style="color: #666;">Facilita gestiones y trámites posteriores</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span class="copyright">&copy; 2025. Todos los derechos reservados.</span>
+            <div class="links">
+                <a href="terms.html">Términos de Uso</a>
+                <span>|</span>
+                <a href="privacy.html">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
