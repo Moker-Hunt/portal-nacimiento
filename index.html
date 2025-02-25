@@ -8,34 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
-<script>
-    if (document.querySelector('.swiper')) {
-      let script = document.createElement('script');
-      script.src = "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js";
-      script.onload = function () {
-        console.log("Swiper загружен");
-        iniciarSwiper(); // Запускаем Swiper после загрузки
-      };
-      document.body.appendChild(script);
-    }
-  
-    function iniciarSwiper() {
-      var swiper = new Swiper(".swiper-container", {
-        loop: true,
-        autoplay: { delay: 3000 },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    }
-</script>
-
 <body>
     <header>
         <div class="container">
@@ -279,43 +251,35 @@
         <button class="button" onclick="aceptarCookies()">Aceptar</button>
         <button class="button" onclick="verMas()">Más información</button>
     </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script>
-        function loadSwiper() {
-            let script = document.createElement('script');
-            script.src = "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js";
-            script.onload = function () {
-                // После загрузки Swiper, инициализируем слайдер
-                const swiper = new Swiper('.swiper', {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    loop: true,
-                    autoplay: {
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    breakpoints: {
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                        }
-                    }
-                });
-            };
-            document.body.appendChild(script);
-        }
-    
-        // Загружаем Swiper только после загрузки страницы
-        window.addEventListener("load", loadSwiper);
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
     </script>
     <script>
 
