@@ -297,6 +297,31 @@
         </div>
     </footer>
 
+    <div id="cookieBanner" class="cookie-banner">
+        <p>Utilizamos cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra 
+        <a href="privacy.html">Política de Privacidad</a> y 
+        <a href="terms.html">Términos de Uso</a>.</p>
+        <button class="button" onclick="aceptarCookies()">Aceptar</button>
+        <button class="button" onclick="verMas()">Más información</button>
+    </div>
+
+    <script>
+        function aceptarCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+            localStorage.setItem('cookiesAceptadas', 'true');
+        }
+
+        function verMas() {
+            window.location.href = 'privacy-cookies.html';
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('cookiesAceptadas')) {
+                document.getElementById('cookieBanner').style.display = 'none';
+            }
+        }
+    </script>
+
     <script src="js/main.js"></script>
 </body>
 </html>
